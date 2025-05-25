@@ -306,7 +306,6 @@ The Student Identification Database manages student profiles, authenticates logi
 
 ### 3.1.1 Register
 
-## 3.1.1 Register
 | Use Case         | 1                                                                                  |
 |------------------|-----------------------------------------------------------------------------------|
 | Use Case Name    | Register                                                                          |
@@ -330,7 +329,6 @@ This activity diagram illustrates the process a student follows to register a ne
 
 ### 3.1.2 Login
 
-## 3.1.2 Login
 | Use Case         | 2                                                                                  |
 |------------------|-----------------------------------------------------------------------------------|
 | Use Case Name    | Login                                                                             |
