@@ -105,7 +105,8 @@ By eliminating paper tickets and manual attendance logs, the system reduces admi
 
 ### 1.2 Scope
 <div style="text-align: justify;">
-The system supports three human actors and three system actors:
+The system supports three human actors and three system actors:<br>
+<br>
 
 **Human Actors**
 
@@ -191,6 +192,8 @@ The **Campus Event Check-in System** functions as a centralized event platform, 
 **Context Diagram**
 
 ![System Overview](image/context_diagram.png)
+
+*Figure 1.3.1.1Contest Diagram*
 
 ---
 
@@ -278,7 +281,9 @@ IEEE. (2018). *ISO/IEC/IEEE 29148:2018 Systems and software engineering—Life c
 
 ### 3.1	Functional Requirements 
 <div style="text-align: justify;">
-The Campus Event Check-in System involves several key actors working together to manage campus events effectively. Students are the primary users who register accounts, browse events, purchase tickets online or on-site, and check into events using QR code tickets. They can also request refunds, view purchase history, and update profiles, interacting mainly with the University Event Calendar for event details and using QR codes for secure entry.
+The Campus Event Check-in System involves several key actors working together to manage campus events effectively. Students are the primary users who register accounts, browse events, purchase tickets online or on-site, and check into events using QR code tickets. They can also request refunds, view purchase history, and update profiles, interacting mainly with the University Event Calendar for event details and using QR codes for secure entry.<br>
+<br>
+
 Event Organizer is responsible for creating and managing events. Organizer list events on the calendar, verify tickets through QR code scanning, track real-time attendance, assist with on-site purchases, and generate post-event reports for analysis and future planning.
 
 Admin can oversee the entire system by managing student accounts, handling refund requests, and reconciling transactions through the Payment Processing System. Admin generate reports on revenue and attendance, maintain system security, and address any technical or administrative issues.
@@ -294,6 +299,8 @@ The Student Identification Database manages student profiles, authenticates logi
 ###Use Case Diagram
 
 ![System Overview](image/use_case_diagram.png)
+
+*Figure 3.1.0.1 Use Case Diagram*
 
 ---
 
@@ -317,6 +324,8 @@ This activity diagram illustrates the process a student follows to register a ne
 
 ![System Overview](image/Register-activity-diagram.png)
 
+*Figure 3.1.1.1 Register (Activity Diagram)*
+
 ---
 
 ### 3.1.2 Login
@@ -339,11 +348,12 @@ This activity diagram shows how users log in to the system. It includes steps fo
 
 ![System Overview](image/Login-activity-diagram.png)
 
+*Figure 3.1.2.1 Login (Activity Diagram)*
+
 ---
 
 ### 3.1.3 Edit Profile
 
-## 3.1.3 Edit Profile
 | Use Case         | 3                                                                                  |
 |------------------|-----------------------------------------------------------------------------------|
 | Use Case Name    | Edit Profile                                                                      |
@@ -360,6 +370,8 @@ This activity diagram outlines the process a student undertakes to update their 
 </div>
 
 ![System Overview](image/Edit-Profile-activity-diagram.png)
+
+*Figure 3.1.3.1 Edit Profile (Activity Diagram)*
 
 ---
 
@@ -382,6 +394,8 @@ This diagram represents how students and admins explore the list of upcoming cam
 
 ![System Overview](image/Event-Browser-activity-diagram.png)
 
+*Figure 3.1.4.1 Browse Event (Activity Diagram)*
+
 ---
 
 ### 3.1.5 Register Event
@@ -401,6 +415,8 @@ This activity diagram depicts how a student registers for an available campus ev
 </div>
 
 ![System Overview](image/Register-event-activity-diagram.png)
+
+*Figure 3.1.5.1 Register Event (Activity Diagram)*
 
 ---
 
@@ -423,6 +439,8 @@ This diagram shows the on-site ticket purchasing process at an event location. T
 
 ![System Overview](image/Make-On-site-Purchase-activity-diagram.png)
 
+*Figure 3.1.6.1 Make on-site Purchase (Activity Diagram)*
+
 ---
 
 ### 3.1.7	Purchase Ticket
@@ -443,6 +461,8 @@ This activity diagram captures the process a student follows to buy an event tic
 </div>
 
 ![System Overview](image/Purchase-Ticket-activity-diagram.png)
+
+*Figure 3.1.7.1 Purchase Ticket (Activity Diagram)*
 
 ---
 
@@ -466,6 +486,7 @@ This activity displays a list of all event ticket purchases made by the student,
 
 ![System Overview](image/View-Purchase-History-activity-diagram.png)
 
+*Figure 3.1.8.1 View Purchase History (Activity Diagram)*
 
 ---
 
@@ -489,6 +510,8 @@ This activity allows students to check in to a campus event by scanning their QR
 
 ![System Overview](image/Check-In-to-the-Event-activity-diagram.png)
 
+*Figure 3.1.9.1 Check-In to the Event (Activity Diagram)*
+
 ---
 
 ### 3.1.10	View and Download QR Code Ticket
@@ -510,6 +533,7 @@ This activity enables students to access their purchased tickets by viewing the 
 
 ![System Overview](image/VIew-downloadQR.png)
 
+*Figure 3.1.10.1 View and Download QR Code Ticket (Activity Diagram)*
 
 ---
 
@@ -532,6 +556,8 @@ This diagram shows how an admin can manage student account information. The admi
 
 ![System Overview](image/Manage-Student-Account-activity-diagram.png)
 
+*Figure 3.1.11.1 Manage Student Account (Activity Diagram)*
+
 ---
 
 ### 3.1.12	Manage Event
@@ -552,6 +578,8 @@ This activity diagram shows admins or event organizers can create new events, up
 </div>
 
 ![System Overview](image/Manage-Event-activity-diagram.png)
+
+*Figure 3.1.12.1 Manage Event (Activity Diagram)*
 
 ---
 
@@ -574,6 +602,8 @@ This activity diagram outlines the admin's process for reviewing and verifying p
 
 ![System Overview](image/Reconciles-Payment-activity-diagram.png)
 
+*Figure 3.1.13.1 Reconciles Payment (Activity Diagram)*
+
 ---
 
 ### 3.1.14	Generate Revenue Report
@@ -594,6 +624,8 @@ This activity diagram presents the steps the admin takes to generate a revenue r
 </div>
 
 ![System Overview](image/Generate-Revenue-Report-activity-diagram.png)
+
+*Figure 3.1.14.1 Generate Revenue Report (Activity Diagram)*
 
 ---
 
@@ -616,6 +648,8 @@ This activity diagram depicts how admins or event organizers access attendance r
 
 ![System Overview](image/View-Attendance-Report-activity-diagram.png)
 
+*Figure 3.1.15.1 View Attendance Report (Activity Diagram)*
+
 ---
 
 ### 3.1.16	Verify Ticket 
@@ -636,6 +670,8 @@ This diagram shows the ticket verification process. An attendee presents their t
 </div>
 
 ![System Overview](image/Verify-Ticket-activity-diagram.png)
+
+*Figure 3.1.16.1 Verify Ticket (Activity Diagram)*
 
 ---
 
@@ -658,6 +694,8 @@ This diagram shows the Track Attendance process. The organizer opens the dashboa
 
 ![System Overview](image/Track-Attendance-activity-diagram.png)
 
+*Figure 3.1.17 Track Attendance (Activity Diagram)*
+
 ---
 
 ### 3.1.18	Assist On-site Purchase Ticket
@@ -678,6 +716,8 @@ This activity diagram illustrates the process of a student requesting a ticket i
 </div>
 
 ![System Overview](image/Assist-On-site-Purchase-Ticket-activity-diagram.png)
+
+*Figure 3.1.18.1 Assist On-site Purchase Ticket (Activity Diagram)*
 
 ---
 
@@ -700,6 +740,7 @@ This activity diagram depicts the refund process for a student who requests a re
 
 ![System Overview](image/Refund-activity-diagram.png)
 
+*Figure 3.1.19.1 Refund (Activity Diagram)*
 
 ---
 
@@ -722,6 +763,8 @@ This activity diagram illustrates the admin-side refund approval workflow. After
 
 ![System Overview](image/Handle-Request-Refund-activity-diagram.png)
 
+*Figure 3.1.20 Hand Request Refund (Activity Diagram)*
+
 ---
 
 ## 3.2 Performance Requirements
@@ -743,7 +786,7 @@ The Campus Event Check-in System must meet the following performance requirement
 - Each check-in station shall process a minimum of 25 students per minute to prevent queues at event entrances.
 - The payment processing module shall handle at least 50 transactions per minute during peak ticket sales periods.
 - The system shall support at least 100 concurrent check-ins for large campus events.
- 
+
 **Capacity Requirements**
 - The database shall support records for at least 30000 student accounts.
 - The system shall maintain historical data for at least 1500 events per academic year.
@@ -774,7 +817,8 @@ The Campus Event Check-in System must meet the following performance requirement
 <div style="text-align: justify;">
 **Ease of Learning**
 1.	The system shall be designed such that new student can complete basic tasks such as browsing events, purchasing tickets without training with 10 minutes of first use.
-2.	Event organizers shall be able to learn core functions (verifying tickets, tracking attendance) within 30 minutes with minimal guidance.
+2.	Event organizers shall be able to learn core functions (verifying tickets, tracking attendance) within 30 minutes with minimal guidance. <br>
+<br>
 
 **Task Efficiency**
 1.	Students shall be able to purchase an event ticket within 5 clicks or interactions from the main dashboard
@@ -821,7 +865,7 @@ The campus event check-in system will interface with the following external syst
 
 ---
 
-### 3.4.2 User Interfce
+### 3.4.2 User Interface
 <div style="text-align: justify;">
 The system will feature a mobile-first responsive web interface, designed for ease of use during campus events. The layout and interaction elements include:
 <br>
@@ -832,24 +876,54 @@ The system will feature a mobile-first responsive web interface, designed for ea
 
 ![System Overview](image/Campus-Check-In-screenshots/StudentSignInPage.png)
 
+*Figure 3.4.2.1 Student Sign in Page*
+
+<br>
+
+
 **•	Upcoming Events Lists Page**
 - After logging in, students are shown a list of upcoming campus events. Events are displayed in card format with essential details and students can click the card to view more information.
 ![System Overview](image/Campus-Check-In-screenshots/UpcomingEventListPage.png)
+
+*Figure 3.4.2.2 Upcoming Events Lists Page*
+
+<br>
 
 **•	Event Details Page**
 - This page displays full event information such as name, date, time, and venue. It includes a “Buy Ticket” button that directs students to the payment process (external system). Students need to pay via iPay88 or FPX or students can purchase the ticket on-site.
 
 ![System Overview](image/Campus-Check-In-screenshots/EventDetailPage.png)
 
+*Figure 3.4.2.3 Event Detail Page*
+
+<br>
+
 **•	QR Code Page**
 - After successful payment, this page shows a confirmation message and a generated QR code for event check-in. Students can download or screenshot the QR code. They need to show the QR Code to the event organizer on the event day for the attendance.
 
 ![System Overview](image/Campus-Check-In-screenshots/QRCodePage.png)
 
+*Figure 3.4.2.4 QR Code Page*
+
+<br>
+
 **•	Checked-In Successful Page**
 - Once the student’s QR code is scanned at the event, this page displays a successful message confirming their attendance. 
 
-![System Overview](iimage/Campus-Check-In-screenshots/CheckedInSuccessfulPage.png)
+![System Overview](image/Campus-Check-In-screenshots/CheckedInSuccessfulPage.png)
+
+*Figure 3.4.2.5 Checked-In Successful Page*
+
+<br>
+
+**•	QR Code Scanner**
+- This interface allows event organizers to scan student QR codes using their tablets or mobile devices, it uses for verifies tickets.
+
+![System Overview](image/Campus-Check-In-screenshots/EventOrganizerQRScannerPage.png)
+
+*Figure 3.4.2.6 QR Code Scanner Page*
+
+<br>
 
 
 **•	Attendance Tracking Page**
@@ -857,6 +931,7 @@ The system will feature a mobile-first responsive web interface, designed for ea
  
 ![System Overview](image/Campus-Check-In-screenshots/AttendanceTrackingPage.png)
 
+*Figure 3.4.2.7 Attendance Tracking Page*
 
 </div>
 
@@ -928,6 +1003,8 @@ The Entity Relationship Diagram (ERD) illustrates the data structure of the Camp
 
 ![System Overview](image/ERD.png)
 
+*Figure 3.5.1.1 Entity Relationship Diagram (ERD)*
+
 ### 3.5.2	Entities
 
 | Entities       | Description                                                                                                       | Attributes involved                                                                                  |
@@ -948,22 +1025,22 @@ The Entity Relationship Diagram (ERD) illustrates the data structure of the Camp
 <div style="text-align: justify;">
 
 
-1.	University Authentication Integration
+**1.	University Authentication Integration**
 -	The system must integrate with the MMU Microsoft Azure AD Single Sign-On (SSO) system. Only users with a valid university-issued Microsoft account (e.g., 1211210989@mmu.edu.my) can access the platform.
 
-2.	Payment System Compliance
+**2.	Payment System Compliance**
 -	All ticket transactions must be processed through the university-approved payment gateway (iPay88 or FPX), ensuring adherence to institutional financial policies and security standards.
 
-3.	Data Privacy and Retention
+**3.	Data Privacy and Retention**
 -	The system must adhere to the university's data protection policies, which set restrictions on usage of data, require safe storage, and specify how long user and transaction data must be kept on file.
 
-4.	Device and Platform Compatibility
+**4.	Device and Platform Compatibility**
 -	The system is limited to web and mobile platforms and must support QR code functionality on devices with a minimum of 3G connectivity and standard mobile browsers.
 
-5.	Student ID dependency
+**5.	Student ID dependency**
 -	The system can only process logins and registrations for students listed in the university’s Student Identification Database. No external or guest access is permitted.
 
-6.	Check-in Infrastructure Dependency
+**6.	Check-in Infrastructure Dependency**
 -	The check-in process relies on event organizers using our system to scan students’ QR codes at the event venue. If the organizer's device or app isn't functioning properly, attendance tracking may be affected.
  
 
@@ -974,26 +1051,26 @@ The Entity Relationship Diagram (ERD) illustrates the data structure of the Camp
 ## 3.7	Software System Attributes
 <div style="text-align: justify;">
 
-1.	Reliability
+**1.	Reliability**
 -	The system must correctly generate and validate QR codes for every registered ticket.
 -	User accounts and event data must remain consistent across login sessions and page reloads.
 
-2.	Availability
+**2.	Availability**
 -	The system must be available 24/7, especially during event registration and check-in periods.
 -	Check-in functionality must remain operational even during brief internet outages by catching requests temporarily.
 
-3.	Security
+**3.	Security**
 -	All user data and transactions must be transmitted over HTTPS.
 -	Login must be protected using Microsoft Azure AD SSO, allowing only authorized university users.
 -	Sensitive data (e.g., student info, payment records) must be encrypted and stored securely.
 -	Role-based access control must restrict actions based on user type (Student, Organizer, Admin).
 
-4.	Maintainability
+**4.	Maintainability**
 -	The admin dashboard must allow adding, updating, and deleting student and event data without requiring backend code changes.
 -	The codebase must follow modular design, separating students, events, and payment modules.
 -	Form validations and error messages must be configurable for future updates.
 
-5.	Portability
+**5.	Portability**
 -	The system must be compatible with major browsers and mobile platforms, be deployable on various operating systems, and maintain over 90% platform-independent code. 
 
 </div>
@@ -1003,51 +1080,51 @@ The Entity Relationship Diagram (ERD) illustrates the data structure of the Camp
 ## 3.8	Supporting Information
 
 **Sample Input/Output**
-1. 	Student Login
+**1. 	Student Login**
  ![System Overview](image/Supporting_Information/Student_Login.png)
 *Figure 3.8.1 Student Login* 
 <br>
-2.	Student Registration
+**2.	Student Registration**
  ![System Overview](image/Supporting_Information/Student_Registration.png)
 *Figure 3.8.2 Student Registration*
 <br>
-3.	Edit Profile
+**3.	Edit Profile**
  ![System Overview](image/Supporting_Information/Edit_Profile_Supp.png)
 *Figure 3.8.3 Edit Profile*
 <br>
-4.	Browse Event
+**4.	Browse Event**
  ![System Overview](image/Supporting_Information/Browe_Event_Supp.png)
 *Figure 3.8.4 Browe Event*
 <br>
-5.	Purchase Tickets Online
+**5.	Purchase Tickets Online**
  ![System Overview](image/Supporting_Information/Purchase_Tickets_Online.png)
 *Figure 3.8.5 Purchase Tickets Online*
 <br>
-6.	View/Download QR Code Ticket
+**6.	View/Download QR Code Ticket**
  ![System Overview](image/Supporting_Information/View_Download_QR_Code_Ticket.png)
 *Figure 3.8.6 View/Download QR Code Ticket*
 <br>
-7.	Event check-in scans QR code
+**7.	Event check-in scans QR code**
  ![System Overview](image/Supporting_Information/Event_check-in_scans_QR_code.png)
 *Figure 3.8.7 Event check-in scans QR code*
 <br>
-8.	Submit refund request
+**8.	Submit refund request**
  ![System Overview](image/Supporting_Information/Submit_refund_request.png)
 *Figure 3.8.8 Submit refund request*
 <br>
-9.	Generate Revenue Report
+**9.	Generate Revenue Report**
  ![System Overview](image/Supporting_Information/Generate_Revenue_Report.png)
 *Figure 3.8.9 Generate Revenue Report*
 <br>
-10.	Track real-time event attendance
+**10.	Track real-time event attendance**
  ![System Overview](image/Supporting_Information/Track_real-time_event_attendance.png)
 *Figure 3.8.10 Track real-time event attendance*
 <br>
-11.	Generate Attendance Report 
+**11.	Generate Attendance Report** 
  ![System Overview](image/Supporting_Information/Generate_Attendance_Report.png)
 *Figure 3.8.11 Generate Attendance Report*
 <br>
-12.	Register Event
+**12.	Register Event**
  ![System Overview](image/Supporting_Information/Register_Event.png)
 *Figure 3.8.12 Register Event*
 
@@ -1059,27 +1136,28 @@ These understand how much money will be required to build and operate a campus e
 <br>
 <br>
 
-1. 	Development Costs
+**1. 	Development Costs**
 •	Labor costs include salaries for developers, testers, designers and project managers.
 •	Tools and software costs include frameworks, databases, and paid APIs (such as QR scanning or payment gateways).
 •	Base infrastructure costs involve setting up the development environment, including computers or cloud services.
 
-2.	Operational Cost Analysis
+**2.	Operational Cost Analysis**
 •	Maintenance includes bug fixing, feature updates, and system performance improvements.
 •	Updates are scheduled monthly or quarterly based on user feedback and technology changes.
 •	Technical support staff are required to assist users and resolve issues.
-3.	Training and Onboarding Cost Analysis 
+
+**3.	Training and Onboarding Cost Analysis**
 •	Training materials such as user manuals, video tutorials, and onboarding videos.
 •	Training sessions help users understand how to use the system effectively.
 •	These sessions may be delivered online (e.g., Zoom, Microsoft Teams) or in person through workshops and briefings.
 
 
-4.	Promotion and Communication Cost Analysis
+**4.	Promotion and Communication Cost Analysis**
 •	Marketing includes the creation of flyers, posters, and brochures for distribution on campus.
 •	Digital promotion includes social media ads on platforms such as Instagram and YouTube, as well as banner ads on campus websites.
 
 
-5.	Risk Based Cost Analysis
+**5.	Risk Based Cost Analysis**
 •	Development delays can lead to higher salaries and missed deadlines.
 •	Issues with integration with student systems or payment systems may require additional developer time.
 •	Security risks such as data leakage and QR forgery can lead to costs for legal and recovery.
@@ -1112,6 +1190,7 @@ The system reduces manual effort, improves accuracy, and increases transparency 
 <br>
 
 **Special packaging instructions**
+
 **Initial loading:**
 The system will be installed on the University's secure server. The deployment package will contain all source code files required to run the system, a database file in SQL format for setting up the system's database and a PDF guide will help IT staff install and set up the system.
 
@@ -1259,4 +1338,3 @@ The development and operation of the Campus Event Check-in System are based on t
 | QA                         | Quality Assurance                           |
 
 ---
-> This project forms part of **TT1L Group 3’s Software Requirements Engineering documentation** for the Campus Event Check-in System.
