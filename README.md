@@ -316,7 +316,7 @@ The Student Identification Database manages student profiles, authenticates logi
 | Post Condition   | 1. A new student account is successfully created and stored in the system's database.<br>2. Students can log in with their credentials. |
 | Alternative Flow | *Invalid Input:<br>- The system detects any required field that is missing or invalid.<br>- The system displays error messages.<br><br>Student already registered:*<br>- The provided email or student ID already exists in the system.<br>- The system displays an appropriate error message. |
 
-Activity diagram
+**Activity diagram**
 <div style="text-align: justify;">
 This activity diagram illustrates the process a student follows to register a new account in the Campus Event Check-in System. It begins when the student accesses the registration page and enters the required details. The system validates the input, checks existing accounts, and upon successful validation, creates a new student profile. If any errors occur (e.g., duplicate Student ID), appropriate messages are displayed.
 </div>
@@ -339,7 +339,7 @@ This activity diagram illustrates the process a student follows to register a ne
 | Post Condition   | 1. Users are successfully authenticated and have access to their respective dashboard and functionalities. |
 | Alternative Flow | *Invalid Credentials:<br>- The system detects the entered email or password is incorrect.<br>- Display an error message.<br><br>Forgot Password:<br>- Users click the "Forgot Password" link<br>- The system prompts the user to enter their registered email.<br><br>Nonexistent Account:*<br>- Displays error message "Account doesn't exist"<br>- Users need to click "Sign Up" button to register an account |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram shows how users log in to the system. It includes steps for entering details, checking if they are correct, handling wrong logins, and resetting forgotten passwords.
 </div>
@@ -362,7 +362,7 @@ This activity diagram shows how users log in to the system. It includes steps fo
 | Post Condition   | 1. The student's profile is updated, and the new information is stored in the system. |
 | Alternative Flow | *Invalid input:*<br>- The system detects any required field that is missing or invalid.<br>- The system displays error message. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram outlines the process a student undertakes to update their profile information. The system validates the new data and saves it or shows an error if the input is invalid.
 </div>
@@ -385,7 +385,7 @@ This activity diagram outlines the process a student undertakes to update their 
 | Post Condition   | 1. The user has successfully viewed the available event and their details.        |
 | Alternative Flow | *No event available:*<br>- The system checks the event database and finds no events.<br>- The system displays a message: "No events are currently available." |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This diagram represents how students and admins explore the list of upcoming campus events. Events are listed, and users can select one to see its details. A message is shown if no events are available.
 </div>
@@ -407,7 +407,7 @@ This diagram represents how students and admins explore the list of upcoming cam
 | Post Condition   | 1. Student is successfully registered for the selected event, and the registration is stored in the system. |
 | Alternative Flow | *Registration Closed:*<br>- The system displays a message indicating that registration is closed.<br>- Students cannot proceed with registration. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram depicts how a student registers for an available campus event. The system checks availability and confirms registration, then adds the student to the event list.
 </div>
@@ -430,7 +430,7 @@ This activity diagram depicts how a student registers for an available campus ev
 | Post Condition   | 1. Ticket is successfully issued to the student.<br>2. System updates the ticket inventory and logs the transaction. |
 | Alternative Flow | *Ticket sold out:*<br>- Event organizers notify the students.<br>- Students failed to purchase ticket. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This diagram shows the on-site ticket purchasing process at an event location. The event organizer checks availability, processes payment, and the system issues a QR ticket.
 </div>
@@ -453,7 +453,7 @@ This diagram shows the on-site ticket purchasing process at an event location. T
 | Post Condition  | 1. Student receives a valid QR code ticket.<br>2. Ticket is saved in purchase history. |
 | Alternative Flow| 1. Payment failed: system shows error message.<br>2. Tickets sold out: purchase process stops. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram captures the process a student follows to buy an event ticket through the system. The student logs in, selects an event, and confirms ticket details. The system interacts with the Payment Gateway to process the transaction, then generates and stores a QR code ticket for future event check-in.
 </div>
@@ -477,7 +477,7 @@ This activity diagram captures the process a student follows to buy an event tic
 | *Alternative Flow* | If no history is found, system displays “No record available.” |
 
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity displays a list of all event ticket purchases made by the student, allowing them to review event names, dates, payment status and transaction details.
 </div>
@@ -501,7 +501,7 @@ This activity displays a list of all event ticket purchases made by the student,
 | *Alternative Flow* | If the QR code is invalid, system will display an error message and not allow to check-in.<br>If the student has not purchased the ticket, system will notify a message “No ticket found.” |
 
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity allows students to check in to a campus event by scanning their QR code tickets, which verifies attendance and logs the check-in timestamp into the system.
 </div>
@@ -524,7 +524,7 @@ This activity allows students to check in to a campus event by scanning their QR
 | *Post Condition*  | 1. Student successfully views and downloads the QR code for offline use. |
 | *Alternative Flow* | If no ticket is found, system will show the error message “No ticket found”. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity enables students to access their purchased tickets by viewing the QR codes on the platform to download the QR code for offline use or event entry.
 </div>
@@ -547,7 +547,7 @@ This activity enables students to access their purchased tickets by viewing the 
 | Post Condition  | Create, updat, or delete student accounts in the system. |
 | Alternative Flow| 1. Invalid Data:<br>- If admin enters invalid data, system displays an error message. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This diagram shows how an admin can manage student account information. The admin can choose to create, update, or delete a student profile. The system validates input, stores the changes in the database.
 </div>
@@ -570,7 +570,7 @@ This diagram shows how an admin can manage student account information. The admi
 | Post Condition  | 1. Create/Edit: The event details saved in system.<br>2. Delete: The event removed from system. |
 | Alternative Flow| 1. Invalid Input: If enters invalid input, the system will diaplay an error message.<br>2. No Deletion Access: If admin try to delete, the system rejects and displays message. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram shows admins or event organizers can create new events, update event details, or delete existing events. The system processes each action and ensures events are properly listed or removed in the system database.
 </div>
@@ -593,7 +593,7 @@ This activity diagram shows admins or event organizers can create new events, up
 | Post Condition  | 1. Payments are marked as reconciled. |
 | Alternative Flow| 1. Payment mismatch:<br>- Admin marks the transaction for investigation. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram outlines the admin's process for reviewing and verifying payment records. The admin accesses payment data, confirms the accuracy of each record, marks reconciled entries, and flags mismatches for further investigation.
 </div>
@@ -616,7 +616,7 @@ This activity diagram outlines the admin's process for reviewing and verifying p
 | Post Condition  | 1. Revenue report is generated and can be downloaded or viewing. |
 | Alternative Flow| 1. No payment data available:<br>- System displays “No data found for the selected range.” |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram presents the steps the admin takes to generate a revenue report. The admin selects a time range or specific event, and the system retrieves relevant payment data to compile and display a report. The report can be exported for recordkeeping.
 </div>
@@ -639,7 +639,7 @@ This activity diagram presents the steps the admin takes to generate a revenue r
 | Post Condition | 1. Admin successfully views the attendance report. |
 | Alternative Flow | 1. No attendance data found: <br>&nbsp;&nbsp;- System displays “No attendance records available.” |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram depicts how admins or event organizers access attendance reports. After logging in, they select an event from a list. The system then displays attendance data for the selected event.
 </div>
@@ -662,7 +662,7 @@ This activity diagram depicts how admins or event organizers access attendance r
 | Post Condition | 1. Ticket status is updated to "used" in the database. <br>2. Attendance records reflect the check-in. <br>3. Real-time dashboards “Track Attendance” are updated. |
 | Alternative Flow | 1. Invalid Ticket: <br>&nbsp;&nbsp;- System displays error reason. <br>&nbsp;&nbsp;- Event Organizer denies entry and directs attendee to help desk. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This diagram shows the ticket verification process. An attendee presents their ticket, the organizer scans it, and the system checks validity. Valid tickets are marked as used, updating attendance and granting entry. Invalid tickets trigger an error and denied entry.
 </div>
@@ -685,7 +685,7 @@ This diagram shows the ticket verification process. An attendee presents their t
 | Post Condition | 1. Attendance data is saved to the event record <br>2. System updates event analytics <br>3. Revenue report is generated |
 | Alternative Flow | 1. No check-ins after event start: <br>&nbsp;&nbsp;- System alerts organizer of low attendance <br>&nbsp;&nbsp;- Event organizer may send reminder notifications to registered attendees <br>2. Overcapacity check-in attempt: <br>&nbsp;&nbsp;- System blocks check-in if event capacity is reached |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This diagram shows the Track Attendance process. The organizer opens the dashboard to view real-time attendance data. The system continuously checks for new check-ins and updates the display. The organizer can filter data or export reports as needed.
 </div>
@@ -708,7 +708,7 @@ This diagram shows the Track Attendance process. The organizer opens the dashboa
 | Post Condition | 1. Ticket is registered to the student account <br>2. Payment is recorded in the system <br>3. Event capacity counts are updated |
 | Alternative Flow | 1. Payment Failure: <br>&nbsp;&nbsp;- System alerts event organizer of declined transaction <br>&nbsp;&nbsp;- Event organizer requests alternative payment method <br>&nbsp;&nbsp;- If payment still fails, system logs attempt and cancels ticket issuance <br>2. Sold out event: <br>&nbsp;&nbsp;- System notifies organizer no tickets are available |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram illustrates the process of a student requesting a ticket in physical event. The event organizer selects the ticket type and quantity, follow by payment processing. If payment fails once, the user is prompted to try an alternative method. After two failed attempts, the process stops. If successful, a ticket is generated.
 </div>
@@ -731,7 +731,7 @@ This activity diagram illustrates the process of a student requesting a ticket i
 | Post Condition | 1. Refund request is logged in the system. <br>2. Ticket is invalidated. <br>3. Payment Processing System records the transaction reversal. |
 | Alternative Flow | 1. Ineligible Ticket: <br>&nbsp;&nbsp;- System detects ticket is non-refundable. <br>&nbsp;&nbsp;- Displays error: "Refund not permitted per policy.” <br>2. Partial Refund: <br>&nbsp;&nbsp;- If policy allows partial refunds, system calculates adjusted amount and updates request. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram depicts the refund process for a student who requests a return for a purchased boost. The student initiates the process by logging in, selecting a boost from their purchase history, and submitting a refund request. The system then checks eligibility—if approved, it calculates any partial refund (if applicable) and notifies an admin for approval. If denied, an error is displayed. Upon admin approval, the refund is processed, the ticket status is updated, and the student is notified via email. The system also logs the refund and records transaction reversals for both partial and full refunds.
 </div>
@@ -754,7 +754,7 @@ This activity diagram depicts the refund process for a student who requests a re
 | Post Condition  | 1. Refund request is marked as either "Approved" or "Rejected"<br>2. For approved requests, payment is returned to student's original payment method<br>3. Ticket status is updated accordingly in the system<br>4. Financial records are updated to reflect the refund. |
 | Alternative Flow| 1. Incomplete Information:<br>&nbsp;&nbsp;- If required information is missing, admin requests additional details from student<br>&nbsp;&nbsp;- System marks request status as "Pending Additional Information"<br>&nbsp;&nbsp;- Student is notified to provide more information<br>2. Partial Refund:<br>&nbsp;&nbsp;- Admin determines a partial refund is appropriate<br>&nbsp;&nbsp;- Admin enters partial refund amount with justification<br>&nbsp;&nbsp;- System processes partial refund and updates records accordingly<br>3. System Error During Refund Processing:<br>&nbsp;&nbsp;- System displays error message.<br>&nbsp;&nbsp;- Admin logs the error and contacts technical support<br>&nbsp;&nbsp;- Refund request remains in "Processing" status. |
 
-Activity diagram 
+**Activity diagram** 
 <div style="text-align: justify;">
 This activity diagram illustrates the admin-side refund approval workflow. After navigating to the "Refund Requests" section, the admin reviews pending requests, examines details, and decides whether to approve or reject each case. If approved, the system connects to the Payment Processing System to execute the refund—updating the ticket status to "Refunded" and notifying the student upon success, or logging errors if payment fails. If rejected, the admin provides a reason, the system marks the request as "Rejected," and the student receives a notification. The process concludes with updates to the refund database and financial records.
 </div>
@@ -1270,13 +1270,14 @@ Unit testing must ensure all the component functions work independently before i
 - System response time must be executed within 2-4 seconds under normal load.
 - The system must support at least 600+ concurrent users without slowing down performance, especially during check in.
 - Event attendance and calendar updates must be reflected in all user views within 5 seconds of the change.
-<br>
+
  
 **Security Criteria**
 - Each QR code must be unique, secure and expire after the first use to prevent duplication or re-use.
 -  Data must be encrypted during transmission and storage.
 - Students, organizers, and admins must only access the features permitted for their roles.
 <br>
+
 **Reliability and Usability Criteria**
 - The system should handle invalid actions and provide clear feedback.
 - The system must be mobile-friendly.
