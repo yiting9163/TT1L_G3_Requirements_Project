@@ -86,67 +86,52 @@
 
 ### 1.1 Purpose
 <div style="text-align: justify;">
-The **Campus Event Check-in System** is a centralized digital platform designed to modernize event management at **Multimedia University**. It integrates with the university’s:
-
-- **Student Identification Database**
-- **Payment Processing System**
-- **University Event Calendar**
-
-The system automates the event lifecycle from registration and ticket purchases (online and on-site) to QR code-based check-ins and refund requests. It ensures efficient attendance tracking and verification.
-
-**Key Benefits:**
-- **Students** can browse events, edit profiles, download QR tickets, and review their purchase history via a user-friendly interface.
-- **Organizers** are equipped with tools to manage events, track attendance, assist with purchases, and generate revenue reports.
-- **Administrators** gain oversight into payment reconciliation, account management, and overall event performance.
-
-By eliminating paper tickets and manual attendance logs, the system reduces administrative overhead, enhances data security, and minimizes errors in payment handling. It is scalable for large events and fosters accountability across all users.
+The Campus Event Check-in System is a centralized digital platform designed to modernize event management at Multimedia University by integrating seamlessly with the university’s Student Identification Database, Payment Processing System, and University Event Calendar. The system automates the entire event lifecycle, from registration and ticket purchases (both online and on-site) to QR code-based check-ins and refund requests, ensuring efficient attendance tracking and verification. For students, it provides a user-friendly interface to browse events, edit profiles, download QR tickets, and review purchase history. Organizers benefit from real-time tools to manage events, track attendance, process on-site purchases, and generate revenue reports, while administrators gain oversight into financial transparency, payment reconciliation, and student account management. By replacing manual processes such as paper tickets and attendance logs, the system reduces administrative overhead, minimizes errors in payment handling, and enhances security for sensitive data. Scalable for large events and robust in design, the platform fosters accountability, streamlines workflows, and delivers a seamless experience for all stakeholders—students, event organizers, and admin alike.
 </div>
+
 ---
 
 ### 1.2 Scope
 <div style="text-align: justify;">
-The system supports three human actors and three system actors:<br>
+The Campus Event Check-in System streamlines event management by integrating with the university’s Student Identification Database, Payment Processing System, and University Calendar. It serves three human actor and three core system actors:<br>
 <br>
 
-**Human Actors**
+**•	Student**
+- Register and login using university Student ID
+- Edit personal profile information
+- Browse and search for available campus events
+- Purchase event tickets online or on-site
+- View, download and display QR code tickets for checking in the event
+- Check-in to events using QR code scanning
+- View purchase history
+- Submit refund request
 
-- **Student**
-  - Register and log in using university Student ID
-  - Edit personal profile information
-  - Browse and search for campus events
-  - Purchase event tickets (online/on-site)
-  - View, download, and display QR code tickets
-  - Check in to events via QR code scanning
-  - View purchase history
-  - Submit refund requests
+**•	Event Organizer**
+- View and verify attendee tickets at check-in station
+- Track real-time event attendance
+- Assist with on-site ticket purchase
+- View and generate attendance reports
+- Create, edit, delete events detail
 
-- **Event Organizer**
-  - View and verify attendee tickets at check-in station
-  - Track real-time event attendance
-  - Assist with on-site ticket purchases
-  - View and generate attendance reports
-  - Create, edit, and delete event details
+**•	Admin**
+- Manage student accounts
+- Create and edit all events details
+- Generate revenue reports
+- View comprehensive attendance reports
+- Handle refund request
 
-- **Admin**
-  - Manage student accounts
-  - Create and edit all event details
-  - Generate revenue reports
-  - View comprehensive attendance reports
-  - Handle refund requests
+**•	Student Identification Database**
+- Validated student credentials during login and registration
+- Provides secure access to student profile
 
-**System Actors**
+**•	Payment Processing System**
+- Facilitates online and on-site transactions and refunds
+- Track revenue and integrates with financial reports
 
-- **Student Identification Database**
-  - Validates student credentials during login and registration
-  - Provides secure access to student profiles
+**•	University Event Calendar**
+- Synce event schedules to avoid overlaps
+- Display real-time availability to users
 
-- **Payment Processing System**
-  - Facilitates online and on-site transactions and refunds
-  - Tracks revenue and integrates with financial reporting
-
-- **University Event Calendar**
-  - Syncs event schedules to avoid overlaps
-  - Displays real-time availability to users
 
 </div>
 
@@ -156,34 +141,29 @@ The system supports three human actors and three system actors:<br>
 
 #### 1.3.1 Product Perspective
 <div style="text-align: justify;">
-The **Campus Event Check-in System** functions as a centralized event platform, interacting with:
+The Campus Event Check-in System functions as a centralized event platform, interacting with:<br>
+<br>
 
 **External Systems**
 
 - **Student Identification Database**
-  - Validates student credentials and enrollment status in real-time
-  - Allows secure access to student profile editing
+  - Validated student credentials and enrollment status in real time
+  - Provides secure access to student profile for editing
 
 - **Payment Processing System**
-  - Manages online and on-site ticket purchases and refunds
+  - Facilitates online and on-site ticket purchases and refund
   - Secures transaction data and syncs payment records with revenue reports
 
-- **University Event Calendar**
-  - Synchronizes event details (date, time, venue) for student browsing
-  - Prevents schedule conflicts through automated availability updates
+- **Event Calendar**
+  - Syncs event details (date, time, venue) for student browsing
+  - Prevent scheduling conflicts by auto-updating event availability
 
 **Physical Components**
 
 - **Mobile Devices**
-  - Students use smartphones to display QR code tickets
-  - Event organizers use tablets to:
-    - Scan tickets
-    - Process on-site ticket purchases
-    - Manage events and view attendance dashboards
-  - Admins use devices to:
-    - Handle refund requests
-    - View attendance reports
-    - Manage events
+  - Students use smartphones to display QR tickets
+  - Event organizers use tablet to scan ticket, process on-site purchase, and view attendance dashboard, manage event
+  - Admin handle refund request, view attendance report, manage event
 
 </div>
 
@@ -213,7 +193,7 @@ The **Campus Event Check-in System** functions as a centralized event platform, 
 |-----------------|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|----------------------------------------------------------|
 | **Student**      | -	Need to have basic computer skills        | •Register via Student ID <br> •	login via Student ID <br> •	Edit profile <br> •	Browse event <br> •	purchase tickets <br> •	QR code to check-in the event <br> •	View purchase history <br> •	Submit refund request <br> •	Register event | -	Mobile device | •	Intermittent (during event registration/ attendance) | 
 | **Event Organizer**| -	Intermediate technical skills | •	Login to the system <br> •	Create, edit, delete event detail <br> •	Validate tickets <br> •	Track real-time attendance <br> •	Manage on-site sales <br> •	Generate reports | <br> -	Mobile device <br> -	Tablet <br> -	Desktop | •	High during events <br> •	Moderate for planning <br> •	For reporting |
-| **Admin** | -	Advanced system knowledge <br> •	Login to the system <br> •	Manage accounts <br> •	Reconcile payments <br> •	Create and edit event detail <br> •	Generate analytics <br> •	Handle refund request | -	Desktop | •	Daily for maintenance <br> •	For reporting | 
+| **Admin** | -	Advanced system knowledge | •	Login to the system <br> •	Manage accounts <br> •	Reconcile payments <br> •	Create and edit event detail <br> •	Generate analytics <br> •	Handle refund request | -	Desktop | •	Daily for maintenance <br> •	For reporting | 
 
  
 
